@@ -1,0 +1,34 @@
+{
+  "image": "/home/Data2/zhuquanhao/US-SAM3/US-SAM3/inference/case002.png",
+  "question": "can you segment the lesion in this image?",
+  "agent_status": "local_fallback_api_error",
+  "agent_chosen_option_id": "5",
+  "agent_chosen_category_name": "lesion",
+  "sam3_prompt": "lesion",
+  "agent_reason": "local fallback matched category text in question",
+  "checkpoint": "/home/Data2/zhuquanhao/US-SAM3/US-SAM3_weight/US-SAM3.pt",
+  "config_path": "/home/Data2/zhuquanhao/US-SAM3/US-SAM3/config/config.yaml",
+  "sam3_code_dir": "/home/Data2/zhuquanhao/US-SAM3/US-SAM3/code",
+  "num_raw_masks": 200,
+  "num_candidates_after_filter": 194,
+  "top1_score": 0.8184862732887268,
+  "top1_area_pixels": 11404,
+  "top1_box": [
+    306,
+    198,
+    145,
+    100
+  ],
+  "min_area": 1,
+  "max_area_ratio": 1.0,
+  "remove_overlap": false,
+  "model_load_info": {
+    "missing_keys": 0,
+    "unexpected_keys": 0
+  },
+  "mask_path": "/home/Data2/zhuquanhao/US-SAM3/US-SAM3/inference/sam3_agent_single_image_outputs/case002_agent_20260526_174528/case002_agent_top1_mask.png",
+  "overlay_path": "/home/Data2/zhuquanhao/US-SAM3/US-SAM3/inference/sam3_agent_single_image_outputs/case002_agent_20260526_174528/case002_agent_top1_overlay.png",
+  "candidates_path": "/home/Data2/zhuquanhao/US-SAM3/US-SAM3/inference/sam3_agent_single_image_outputs/case002_agent_20260526_174528/case002_agent_candidates.json",
+  "raw_agent_response_path": "/home/Data2/zhuquanhao/US-SAM3/US-SAM3/inference/sam3_agent_single_image_outputs/case002_agent_20260526_174528/case002_agent_raw_response.txt",
+  "run_dir": "/home/Data2/zhuquanhao/US-SAM3/US-SAM3/inference/sam3_agent_single_image_outputs/case002_agent_20260526_174528"
+}

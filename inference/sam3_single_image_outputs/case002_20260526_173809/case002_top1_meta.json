@@ -1,0 +1,14 @@
+{
+  "image": "/home/Data2/zhuquanhao/US-SAM3/US-SAM3/inference/case002.png",
+  "prompt": "breast lesion",
+  "model_name": "US-SAM3",
+  "checkpoint": "/home/Data2/zhuquanhao/US-SAM3/US-SAM3_weight/US-SAM3.pt",
+  "num_predictions_for_image": 100,
+  "top1_score": 0.90625,
+  "top1_category_id": 1,
+  "top1_area_pixels": 10430,
+  "prediction_file": "/home/Data2/zhuquanhao/US-SAM3/US-SAM3/inference/sam3_single_image_outputs/case002_20260526_173809/sam3_raw_outputs/US-SAM3/single_image/dumps/coco_predictions_segm.json",
+  "mask_path": "/home/Data2/zhuquanhao/US-SAM3/US-SAM3/inference/sam3_single_image_outputs/case002_20260526_173809/case002_top1_mask.png",
+  "overlay_path": "/home/Data2/zhuquanhao/US-SAM3/US-SAM3/inference/sam3_single_image_outputs/case002_20260526_173809/case002_top1_overlay.png",
+  "run_dir": "/home/Data2/zhuquanhao/US-SAM3/US-SAM3/inference/sam3_single_image_outputs/case002_20260526_173809"
+}
