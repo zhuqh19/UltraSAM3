@@ -403,45 +403,7 @@ trainer:
             category_chunk_size: 2
             _partial_: true
 
-          # --- Gastrointestinal ---
-        # - _target_: sam3.train.data.sam3_image_dataset.Sam3ImageDataset
-        #   limit_ids:
-        #   transforms: *train_transforms
-        #   load_segmentation: true
-        #   max_ann_per_img: 500000
-        #   multiplier: 1
-        #   max_train_queries: 50000
-        #   max_val_queries: 50000
-        #   training: true
-        #   use_caching: false
-        #   img_folder: 
-        #     /home/Data2/zhuquanhao/datasets/Gastrointestinal/Datasets/GIST514_DB_coco/train/
-        #   ann_file: 
-        #     /home/Data2/zhuquanhao/datasets/Gastrointestinal/Datasets/GIST514_DB_coco/train/_annotations.coco.json
-        #   coco_json_loader:
-        #     _target_: sam3.train.data.coco_json_loaders.COCO_FROM_JSON
-        #     include_negatives: true
-        #     category_chunk_size: 2
-        #     _partial_: true
-        # - _target_: sam3.train.data.sam3_image_dataset.Sam3ImageDataset
-        #   limit_ids:
-        #   transforms: *train_transforms
-        #   load_segmentation: true
-        #   max_ann_per_img: 500000
-        #   multiplier: 1
-        #   max_train_queries: 50000
-        #   max_val_queries: 50000
-        #   training: true
-        #   use_caching: false
-        #   img_folder: 
-        #     /home/Data2/zhuquanhao/datasets/Gastrointestinal/Datasets/c_trus_coco/train/
-        #   ann_file: 
-        #     /home/Data2/zhuquanhao/datasets/Gastrointestinal/Datasets/c_trus_coco/train/_annotations.coco.json
-        #   coco_json_loader:
-        #     _target_: sam3.train.data.coco_json_loaders.COCO_FROM_JSON
-        #     include_negatives: true
-        #     category_chunk_size: 2
-        #     _partial_: true
+         
 
           # --- Prostate ---
         - _target_: sam3.train.data.sam3_image_dataset.Sam3ImageDataset
@@ -503,25 +465,6 @@ trainer:
             include_negatives: true
             category_chunk_size: 2
             _partial_: true
-        # - _target_: sam3.train.data.sam3_image_dataset.Sam3ImageDataset
-        #   limit_ids:
-        #   transforms: *train_transforms
-        #   load_segmentation: true
-        #   max_ann_per_img: 500000
-        #   multiplier: 1
-        #   max_train_queries: 50000
-        #   max_val_queries: 50000
-        #   training: true
-        #   use_caching: false
-        #   img_folder: 
-        #     /home/Data2/zhuquanhao/datasets/Thyroid/Datasets/KFGNet_coco/train/
-        #   ann_file: 
-        #     /home/Data2/zhuquanhao/datasets/Thyroid/Datasets/KFGNet_coco/train/_annotations.coco.json
-        #   coco_json_loader:
-        #     _target_: sam3.train.data.coco_json_loaders.COCO_FROM_JSON
-        #     include_negatives: true
-        #     category_chunk_size: 2
-        #     _partial_: true
         - _target_: sam3.train.data.sam3_image_dataset.Sam3ImageDataset
           limit_ids:
           transforms: *train_transforms
@@ -600,25 +543,6 @@ trainer:
             _partial_: true
 
           # --- Liver ---
-        # - _target_: sam3.train.data.sam3_image_dataset.Sam3ImageDataset
-        #   limit_ids:
-        #   transforms: *train_transforms
-        #   load_segmentation: true
-        #   max_ann_per_img: 500000
-        #   multiplier: 1
-        #   max_train_queries: 50000
-        #   max_val_queries: 50000
-        #   training: true
-        #   use_caching: false
-        #   img_folder: 
-        #     /home/Data2/zhuquanhao/datasets/liver/Datasets/105US_tumor_coco/train/
-        #   ann_file: 
-        #     /home/Data2/zhuquanhao/datasets/liver/Datasets/105US_tumor_coco/train/_annotations.coco.json
-        #   coco_json_loader:
-        #     _target_: sam3.train.data.coco_json_loaders.COCO_FROM_JSON
-        #     include_negatives: true
-        #     category_chunk_size: 2
-        #     _partial_: true
         - _target_: sam3.train.data.sam3_image_dataset.Sam3ImageDataset
           limit_ids:
           transforms: *train_transforms
@@ -756,25 +680,6 @@ trainer:
             _partial_: true
 
           # --- Nerve ---
-        # - _target_: sam3.train.data.sam3_image_dataset.Sam3ImageDataset
-        #   limit_ids:
-        #   transforms: *train_transforms
-        #   load_segmentation: true
-        #   max_ann_per_img: 500000
-        #   multiplier: 1
-        #   max_train_queries: 50000
-        #   max_val_queries: 50000
-        #   training: true
-        #   use_caching: false
-        #   img_folder: 
-        #     /home/Data2/zhuquanhao/datasets/Nerve/Datasets/US_Nerve_coco/train/
-        #   ann_file: 
-        #     /home/Data2/zhuquanhao/datasets/Nerve/Datasets/US_Nerve_coco/train/_annotations.coco.json
-        #   coco_json_loader:
-        #     _target_: sam3.train.data.coco_json_loaders.COCO_FROM_JSON
-        #     include_negatives: true
-        #     category_chunk_size: 2
-        #     _partial_: true
         - _target_: sam3.train.data.sam3_image_dataset.Sam3ImageDataset
           limit_ids:
           transforms: *train_transforms
@@ -834,25 +739,6 @@ trainer:
             include_negatives: true
             category_chunk_size: 2
             _partial_: true
-        # - _target_: sam3.train.data.sam3_image_dataset.Sam3ImageDataset
-        #   limit_ids:
-        #   transforms: *train_transforms
-        #   load_segmentation: true
-        #   max_ann_per_img: 500000
-        #   multiplier: 1
-        #   max_train_queries: 50000
-        #   max_val_queries: 50000
-        #   training: true
-        #   use_caching: false
-        #   img_folder: 
-        #     /home/Data2/zhuquanhao/datasets/Breast/Datasets/BUS_UCLM_coco/train/
-        #   ann_file: 
-        #     /home/Data2/zhuquanhao/datasets/Breast/Datasets/BUS_UCLM_coco/train/_annotations.coco.json
-        #   coco_json_loader:
-        #     _target_: sam3.train.data.coco_json_loaders.COCO_FROM_JSON
-        #     include_negatives: true
-        #     category_chunk_size: 2
-        #     _partial_: true
         - _target_: sam3.train.data.sam3_image_dataset.Sam3ImageDataset
           limit_ids:
           transforms: *train_transforms
@@ -950,44 +836,6 @@ trainer:
             include_negatives: true
             category_chunk_size: 2
             _partial_: true
-        # - _target_: sam3.train.data.sam3_image_dataset.Sam3ImageDataset
-        #   limit_ids:
-        #   transforms: *train_transforms
-        #   load_segmentation: true
-        #   max_ann_per_img: 500000
-        #   multiplier: 1
-        #   max_train_queries: 50000
-        #   max_val_queries: 50000
-        #   training: true
-        #   use_caching: false
-        #   img_folder: 
-        #     /home/Data2/zhuquanhao/datasets/Carotid_artery/Datasets/CCAUI_coco/train/
-        #   ann_file: 
-        #     /home/Data2/zhuquanhao/datasets/Carotid_artery/Datasets/CCAUI_coco/train/_annotations.coco.json
-        #   coco_json_loader:
-        #     _target_: sam3.train.data.coco_json_loaders.COCO_FROM_JSON
-        #     include_negatives: true
-        #     category_chunk_size: 2
-        #     _partial_: true
-        # - _target_: sam3.train.data.sam3_image_dataset.Sam3ImageDataset
-        #   limit_ids:
-        #   transforms: *train_transforms
-        #   load_segmentation: true
-        #   max_ann_per_img: 500000
-        #   multiplier: 1
-        #   max_train_queries: 50000
-        #   max_val_queries: 50000
-        #   training: true
-        #   use_caching: false
-        #   img_folder: 
-        #     /home/Data2/zhuquanhao/datasets/Carotid_artery/Datasets/CUBS_coco/train/
-        #   ann_file: 
-        #     /home/Data2/zhuquanhao/datasets/Carotid_artery/Datasets/CUBS_coco/train/_annotations.coco.json
-        #   coco_json_loader:
-        #     _target_: sam3.train.data.coco_json_loaders.COCO_FROM_JSON
-        #     include_negatives: true
-        #     category_chunk_size: 2
-        #     _partial_: true
 
           # --- Kidney ---
         - _target_: sam3.train.data.sam3_image_dataset.Sam3ImageDataset
