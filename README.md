@@ -66,6 +66,13 @@ The following table lists the 37 ultrasound datasets used by US-SAM3 and their c
 | `Ultrasound_Normal_Kidney`   | Ultrasound Normal Kidney Image Dataset                       |
 | `KidneyUS`                   | The Open Kidney Ultrasound Data Set                          |
 
+## 🛠️ Environment Setup
+
+For environment configuration and dependency installation, please refer to the following two documents:
+
+- [Training Environment Guide](https://github.com/zhuqh19/US-SAM3/blob/main/code/README_TRAIN.md)
+- [Code Environment Guide](https://github.com/zhuqh19/US-SAM3/blob/main/code/README.md)
+
 ## 🚀 Single-image Inference
 
 We provide two single-image inference scripts:
