@@ -12,10 +12,6 @@
     <img src="./static/images/framework.png" width="100%" alt="US-SAM3 Teaser">
   </a>
 
-  <!-- <p align="center">
-  <a href="https://arxiv.org/abs/2601.10880"><img src="https://img.shields.io/badge/arXiv-2601.10880-b31b1b?style=flat-square&logo=arxiv"></a>&nbsp;<a href="https://chongcongjiang.github.io/MedicalSAM3/"><img src="https://img.shields.io/badge/Website-Project%20Page-blue?style=flat-square&logo=google-chrome"></a>&nbsp;<a href="https://huggingface.co/Chongcong/Medical-SAM3"><img src="https://img.shields.io/badge/Hugging%20Face-Models-yellow?style=flat-square&logo=huggingface"></a>
-  </p> -->
-
 </div>
 
 ## 📰 News
@@ -201,17 +197,7 @@ Both scripts print the saved file paths after inference. The most useful outputs
 - `*_meta.json` or `*_agent_meta.json`: prompt, checkpoint/config paths, scores, area, and output locations.
 - `run_val_stdout.txt` or `*_agent_raw_response.txt`: logs or raw agent response for debugging.
 
-<div align="left">
-  <a href="./inference/README.md">
-    <img src="https://img.shields.io/badge/📖-Read_Full_Evaluation_Guide-blue?style=for-the-badge&logo=markdown">
-  </a>
-</div>
 
-
-<!-- <br>
-<p align="left">
-  <i>📢 We are actively updating this repository. If you are interested in any features above, feel free to open an issue!</i>
-</p> -->
 
 ## 📝 Citation
 
