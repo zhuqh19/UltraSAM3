@@ -1,26 +1,26 @@
 <div align="center">
   
-  <h1>US-SAM3: A Concept-Driven Foundation Model for Universal Ultrasound Image Segmentation</h1>
+  <h1>UltraSAM3: A Concept-Driven Foundation Model for Universal Ultrasound Image Segmentation</h1>
   
   <h3>Introduction</h3>
-  <a href="https://github.com/zhuqh19/US-SAM3">
-    <img src="./static/images/introduction.png" width="100%" alt="US-SAM3 Teaser">
+  <a href="https://github.com/zhuqh19/UltraSAM3">
+    <img src="./static/images/introduction.png" width="100%" alt="UltraSAM3 Teaser">
   </a> 
 
   <h3>Framework</h3>
-  <a href="https://github.com/zhuqh19/US-SAM3">
-    <img src="./static/images/framework.png" width="100%" alt="US-SAM3 Teaser">
+  <a href="https://github.com/zhuqh19/UltraSAM3">
+    <img src="./static/images/framework.png" width="100%" alt="UltraSAM3 Teaser">
   </a>
 
 </div>
 
 ## 📰 News
 <!-- * **[2026-05-26]**: 📄 Paper is available on arXiv. -->
-* **[2026-05-26]**: 🚀 Pretrained weights for US-SAM3 are released!
+* **[2026-05-26]**: 🚀 Pretrained weights for UltraSAM3 are released!
 
 ## 📚 Training Datasets
 
-The following table lists the 37 ultrasound datasets used by US-SAM3 and their corresponding paper or source titles.
+The following table lists the 37 ultrasound datasets used by UltraSAM3 and their corresponding paper or source titles.
 
 | Dataset                      | Paper / Source Title                                         |
 | ---------------------------- | ------------------------------------------------------------ |
@@ -66,15 +66,15 @@ The following table lists the 37 ultrasound datasets used by US-SAM3 and their c
 
 For environment configuration and dependency installation, please refer to the following two documents:
 
-- [Training Environment Guide](https://github.com/zhuqh19/US-SAM3/blob/main/code/README_TRAIN.md)
-- [Code Environment Guide](https://github.com/zhuqh19/US-SAM3/blob/main/code/README.md)
+- [Training Environment Guide](https://github.com/zhuqh19/UltraSAM3/blob/main/code/README_TRAIN.md)
+- [Code Environment Guide](https://github.com/zhuqh19/UltraSAM3/blob/main/code/README.md)
 
 ## 🚀 Single-image Inference
 
 We provide two single-image inference scripts:
 
-- `inference.py`: run US-SAM3 with an image and a direct text prompt, such as `"thyroid nodule"`.
-- `inference_agent.py`: run US-SAM3 with an image and a natural-language question. The script first uses an agent/API to rewrite the question into a concise SAM3 prompt, then runs segmentation.
+- `inference.py`: run UltraSAM3 with an image and a direct text prompt, such as `"thyroid nodule"`.
+- `inference_agent.py`: run UltraSAM3 with an image and a natural-language question. The script first uses an agent/API to rewrite the question into a concise SAM3 prompt, then runs segmentation.
 
 Before running the scripts, please make sure that the SAM3 code, config file, checkpoint, and tokenizer vocabulary paths are correctly set for your local environment.
 
@@ -87,11 +87,11 @@ At minimum, check and update the following fields in `config/config.yaml`:
 ```yaml
 paths:
   experiment_log_dir: /path/to/your/log_dir
-  bpe_path: /path/to/US-SAM3/code/assets/bpe_simple_vocab_16e6.txt.gz
+  bpe_path: /path/to/UltraSAM3/code/assets/bpe_simple_vocab_16e6.txt.gz
 
 trainer:
   model:
-    bpe_path: /path/to/US-SAM3/code/assets/bpe_simple_vocab_16e6.txt.gz
+    bpe_path: /path/to/UltraSAM3/code/assets/bpe_simple_vocab_16e6.txt.gz
     checkpoint_path: /path/to/sam3_or_us_sam3_checkpoint.pt
 
   meters:
@@ -123,9 +123,9 @@ Use `inference.py` when you already know the target concept prompt.
 python inference.py \
   --image /path/to/image.png \
   --prompt "thyroid nodule" \
-  --sam3-code-dir /path/to/US-SAM3/code \
-  --sam3-config /path/to/US-SAM3/config/config.yaml \
-  --checkpoint /path/to/US-SAM3_weight/US-SAM3.pt \
+  --sam3-code-dir /path/to/UltraSAM3/code \
+  --sam3-config /path/to/UltraSAM3/config/config.yaml \
+  --checkpoint /path/to/UltraSAM3_weight/UltraSAM3.pt \
   --output-root ./sam3_single_image_outputs \
   --cuda-visible-devices 0
 ```
@@ -136,7 +136,7 @@ Main arguments:
 - `--prompt`: target object/anatomy/pathology name used as the SAM3 text prompt.
 - `--sam3-code-dir`: path to the SAM3 code directory.
 - `--sam3-config`: path to the Hydra config file.
-- `--checkpoint`: path to the US-SAM3 checkpoint.
+- `--checkpoint`: path to the UltraSAM3 checkpoint.
 - `--output-root`: directory where masks, overlays, metadata, and logs will be saved.
 - `--cuda-visible-devices`: optional GPU id, for example `0`.
 
@@ -150,9 +150,9 @@ Use `inference_agent.py` when you want to provide a natural-language question in
 python inference_agent.py \
   --image /path/to/image.png \
   --question "Please segment the thyroid nodule in this ultrasound image." \
-  --sam3-code-dir /path/to/US-SAM3/code \
-  --config-path /path/to/US-SAM3/config/config.yaml \
-  --checkpoint-path /path/to/US-SAM3_weight/US-SAM3.pt \
+  --sam3-code-dir /path/to/UltraSAM3/code \
+  --config-path /path/to/UltraSAM3/config/config.yaml \
+  --checkpoint-path /path/to/UltraSAM3_weight/UltraSAM3.pt \
   --api-key $OPENAI_API_KEY \
   --api-url https://your-api-endpoint/v1/chat/completions \
   --api-model your-api-model \
@@ -166,7 +166,7 @@ Main arguments:
 - `--question`: natural-language segmentation request.
 - `--sam3-code-dir`: path to the SAM3 code directory.
 - `--config-path`: path to the Hydra config file.
-- `--checkpoint-path`: path to the US-SAM3 checkpoint.
+- `--checkpoint-path`: path to the UltraSAM3 checkpoint.
 - `--api-key`, `--api-url`, `--api-model`: API settings for the front-end agent.
 - `--categories`: optional comma-separated target category list shown to the agent.
 - `--categories-file`: optional `.txt` or `.json` category list.
@@ -180,9 +180,9 @@ If you do not want to use an API, run:
 python inference_agent.py \
   --image /path/to/image.png \
   --question "Please segment the thyroid nodule in this ultrasound image." \
-  --sam3-code-dir /path/to/US-SAM3/code \
-  --config-path /path/to/US-SAM3/config/config.yaml \
-  --checkpoint-path /path/to/US-SAM3_weight/US-SAM3.pt \
+  --sam3-code-dir /path/to/UltraSAM3/code \
+  --config-path /path/to/UltraSAM3/config/config.yaml \
+  --checkpoint-path /path/to/UltraSAM3_weight/UltraSAM3.pt \
   --no-api
 ```
 
