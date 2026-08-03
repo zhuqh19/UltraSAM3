@@ -16,7 +16,8 @@
 
 ## 📰 News
 <!-- * **[2026-07-30]**: 📄 Paper is available on arXiv. -->
-* **[2026-07-30]**: 🚀 Pretrained weights for UltraSAM3 are released! Please visit https://huggingface.co/zhuqh19/UltraSAM3.
+* **[2026-07-30]**: 🚀 Pretrained weight for UltraSAM3 is released! Please visit https://huggingface.co/zhuqh19/UltraSAM3.
+* **[2026-08-03]**: 📄 Our Paper for UltraSAM3 is released! Please visit https://arxiv.org/pdf/2607.29200.
 
 ## 📚 Training Datasets
 
