@@ -205,5 +205,13 @@ Both scripts print the saved file paths after inference. The most useful outputs
 If you find US-SAM3 useful for your research or work, please consider citing our paper:
 
 ```bibtex
-
+@misc{xu2026ultrasam3conceptdrivenfoundationmodel,
+      title={UltraSAM3: A Concept-Driven Foundation Model for Universal Ultrasound Image Segmentation}, 
+      author={Bo Xu and Quanhao Zhu and Rui Lin and Boling Zhu and Chenyuan Wang and Hongfei Lin and Feng Xia and Chenhua Ji},
+      year={2026},
+      eprint={2607.29200},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2607.29200}, 
+}
 }
