@@ -214,4 +214,3 @@ If you find US-SAM3 useful for your research or work, please consider citing our
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2607.29200}, 
 }
-}
