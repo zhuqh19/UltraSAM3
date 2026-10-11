@@ -15,9 +15,7 @@
 </div>
 
 ## 📰 News
-<!-- * **[2026-07-30]**: 📄 Paper is available on arXiv. -->
 * **[2026-07-30]**: 🚀 Pretrained weight for UltraSAM3 is released! Please visit https://huggingface.co/zhuqh19/UltraSAM3.
-* **[2026-08-03]**: 📄 Our Paper for UltraSAM3 is released! Please visit https://arxiv.org/pdf/2607.29200.
 
 ## 📚 Training Datasets
 
@@ -198,19 +196,3 @@ Both scripts print the saved file paths after inference. The most useful outputs
 - `*_meta.json` or `*_agent_meta.json`: prompt, checkpoint/config paths, scores, area, and output locations.
 - `run_val_stdout.txt` or `*_agent_raw_response.txt`: logs or raw agent response for debugging.
 
-
-
-## 📝 Citation
-
-If you find US-SAM3 useful for your research or work, please consider citing our paper:
-
-```bibtex
-@misc{xu2026ultrasam3conceptdrivenfoundationmodel,
-      title={UltraSAM3: A Concept-Driven Foundation Model for Universal Ultrasound Image Segmentation}, 
-      author={Bo Xu and Quanhao Zhu and Rui Lin and Boling Zhu and Chenyuan Wang and Hongfei Lin and Feng Xia and Chenhua Ji},
-      year={2026},
-      eprint={2607.29200},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2607.29200}, 
-}
